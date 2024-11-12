@@ -14,6 +14,7 @@ Run the program with the following parameters:
 
 ```bash
 ./spotify-scannable-downloader -u "https://open.spotify.com/track/xyz" -c "blue"
+cargo run --release -- -u "https://open.spotify.com/track/3Rc5bO1LQjlVPalGDwTsMa?si=69076081249245e0" -c "white"
 ```
 - `-u`: Spotify content URL (required).
 - `-c`: Code color (optional, default: black).
