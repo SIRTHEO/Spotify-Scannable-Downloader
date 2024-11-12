@@ -16,7 +16,7 @@ pub struct Opt {
     spotify_url: String,
 
     #[arg(short = 'c', long)]
-    code_color: Option<String>, // Non specificare un valore predefinito, usiamo Option
+    code_color: Option<String>, 
 }
 
 
@@ -24,7 +24,6 @@ pub struct Opt {
 async fn main() -> Result<(), Box<dyn Error>> {
     let opt = Opt::parse();
 
-    // Imposta un colore di default se non viene passato dall'utente
     let code_color = opt.code_color.unwrap_or_else(|| "black".to_string());
 
     let spotify_info = extract_spotify_info(&opt.spotify_url)?;

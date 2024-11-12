@@ -1,7 +1,5 @@
 use std::error::Error;
-
 use reqwest::Client;
-
 use crate::core::svg::process_svg::process_svg;
 
 pub async fn download_and_save_scannable(
